@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference 
+        android:key="update_frequency"
+        android:entries="@array/update_list_name"
+        android:entryValues="@array/update_list_values"
+        android:title="更新频率"
+        android:dialogTitle="更新频率Dialog" 
+        android:summary="每隔一天"
+        android:defaultValue="1"
+        />
+    
+    <EditTextPreference 
+        android:key = "input_city"
+        android:title="输入你查询的城市"
+        android:summary="宁波"
+        />
+    
+</PreferenceScreen>

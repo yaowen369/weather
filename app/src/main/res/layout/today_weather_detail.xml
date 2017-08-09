@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/todayWeatherDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+     >
+     <!-- 左边的 区域 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <!-- 城市名  -->
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shanghai"
+            />
+        <!-- 实时温度 -->
+        <TextView 
+            android:id="@+id/realtimeTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="30dp"
+            />
+        <!-- 今日温度范围 -->
+        <TextView 
+            android:id="@+id/temperatureRang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0C"
+            />
+         <!--  风向 -->
+        <TextView 
+            android:id="@+id/windDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            />
+    </LinearLayout>
+    
+    
+    <!-- 右边的区域 -->
+     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!-- 天气状况的图片  -->
+        <ImageView 
+            android:id="@+id/weatherPic"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            />
+        <!-- 天气状况的文字解释 -->
+        <TextView 
+            android:id="@+id/weatherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="null"
+            />
+       
+    </LinearLayout>
+</LinearLayout>

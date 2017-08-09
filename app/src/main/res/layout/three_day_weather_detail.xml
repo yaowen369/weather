@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/threeDayWeatherDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:background="#cc4876FF" >
+    
+	    
+	<!-- 第一天的天气 -->
+	<include layout="@layout/single_day_detail_1"
+	    android:id="@+id/firstDay"
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    />
+	
+	<!-- 第二天的天气 -->
+	<include layout="@layout/single_day_detail_2"
+	    android:id="@+id/secondDay"
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    />
+	
+		<!-- 第三天的天气 -->
+	<include layout="@layout/single_day_detail_3"
+	    android:id="@+id/thirdDay"
+	    android:layout_height="fill_parent"
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/secondSingleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周五"
+        android:textSize="20dp"
+        />
+    
+    <TextView 
+		android:id="@+id/secondSingleWeatherText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="10dp"
+		android:gravity="center"
+		android:text="多云转晴"
+        />
+	
+    <TextView 
+        android:id="@+id/secondSingleWindDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+		android:gravity="center"
+        android:text="风向"
+        />
+    
+    <TextView 
+        android:id="@+id/secondSingleTemperatureRang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17/23C"
+        />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="update_list_name">
+        <item>从不自动更新</item>
+        <item>每隔一天</item>
+        <item>每隔12小时</item>
+        <item>每隔6小时</item>
+        <item>每隔3小时</item>
+    </string-array>
+    
+    <string-array name="update_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
