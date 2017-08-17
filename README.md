@@ -6,9 +6,9 @@
 
 本项目是个 可以用作桌面小工具(`AppWidgetProvider`)的天气预报应用。界面如下：
 
-![app_widget](https://github.com/yaowen369/weather/app_widget.jpg)
+![app_widget](https://github.com/yaowen369/weather/blob/master/docs/app_widget.jpg)
 
-![setting_activity](https://github.com/yaowen369/weather/setting.jpg)
+![setting_activity](https://github.com/yaowen369/weather/blob/master/docs/setting.jpg)
 
 天气预报的数据是从[百度API](http://api.map.baidu.com/telematics/v3/weather?location=%E4%B8%8A%E6%B5%B7&output=xml&ak=9IFC7MPIPL3mLy8GUVMwYSNE)上获得的,使用 `HttpURLConnection`建立网络链接，返回的是[xml格式的数据](https://github.com/yaowen369/weather/baidu_api_return.xml)，自己手动解析数据，然后刷新界面，并存储到数据库中。
 
