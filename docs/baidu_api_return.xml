@@ -1,0 +1,62 @@
+<!-- http://api.map.baidu.com/telematics/v3/weather?location=%E4%B8%8A%E6%B5%B7&output=xml&ak=9IFC7MPIPL3mLy8GUVMwYSNE -->
+<!-- 根据上一个地址 所返回的信息 -->
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<CityWeatherResponse> 
+  <error>0</error>  
+  <status>success</status>  
+  <date>2017-08-17</date>  
+  <results> 
+    <currentCity>上海</currentCity>  
+    <weather_data> 
+      <date>周四 08月17日 (实时：30℃)</date>  
+      <dayPictureUrl>http://api.map.baidu.com/images/weather/day/xiaoyu.png</dayPictureUrl>  
+      <nightPictureUrl>http://api.map.baidu.com/images/weather/night/xiaoyu.png</nightPictureUrl>  
+      <weather>小雨</weather>  
+      <wind>东南风微风</wind>  
+      <temperature>33 ~ 27℃</temperature>  
+      <date>周五</date>  
+      <dayPictureUrl>http://api.map.baidu.com/images/weather/day/zhongyu.png</dayPictureUrl>  
+      <nightPictureUrl>http://api.map.baidu.com/images/weather/night/duoyun.png</nightPictureUrl>  
+      <weather>中雨转多云</weather>  
+      <wind>南风微风</wind>  
+      <temperature>34 ~ 26℃</temperature>  
+      <date>周六</date>  
+      <dayPictureUrl>http://api.map.baidu.com/images/weather/day/xiaoyu.png</dayPictureUrl>  
+      <nightPictureUrl>http://api.map.baidu.com/images/weather/night/xiaoyu.png</nightPictureUrl>  
+      <weather>小雨</weather>  
+      <wind>南风微风</wind>  
+      <temperature>32 ~ 25℃</temperature>  
+      <date>周日</date>  
+      <dayPictureUrl>http://api.map.baidu.com/images/weather/day/xiaoyu.png</dayPictureUrl>  
+      <nightPictureUrl>http://api.map.baidu.com/images/weather/night/yin.png</nightPictureUrl>  
+      <weather>小雨转阴</weather>  
+      <wind>南风微风</wind>  
+      <temperature>32 ~ 26℃</temperature> 
+    </weather_data>  
+    <index> 
+      <title>穿衣</title>  
+      <zs>炎热</zs>  
+      <tipt>穿衣指数</tipt>  
+      <des>天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。</des>  
+      <title>洗车</title>  
+      <zs>不宜</zs>  
+      <tipt>洗车指数</tipt>  
+      <des>不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。</des>  
+      <title>感冒</title>  
+      <zs>少发</zs>  
+      <tipt>感冒指数</tipt>  
+      <des>各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</des>  
+      <title>运动</title>  
+      <zs>较不宜</zs>  
+      <tipt>运动指数</tipt>  
+      <des>有较强降水，建议您选择在室内进行健身休闲运动。</des>  
+      <title>紫外线强度</title>  
+      <zs>弱</zs>  
+      <tipt>紫外线强度指数</tipt>  
+      <des>紫外线强度较弱，建议出门前涂擦SPF在12-15之间、PA+的防晒护肤品。</des> 
+    </index>  
+    <pm25>65</pm25> 
+  </results> 
+</CityWeatherResponse>

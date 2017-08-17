@@ -18,7 +18,6 @@ public class MainReceiver extends BroadcastReceiver {
 	private SharedPreferences sp;
 	
 	public MainReceiver() {
-		// TODO Auto-generated constructor stub
 		mGetWeatherTask = new GetWeatherAsyncTask(MyApp.getContext());
 		mDebugTools = new DebugTools(MyApp.getContext());
 		sp = PreferenceManager.getDefaultSharedPreferences(MyApp.getContext());
@@ -26,7 +25,6 @@ public class MainReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "onReceive() -> intent.getAction() = " + intent.getAction());
 		String city = null;
 		
@@ -44,6 +42,8 @@ public class MainReceiver extends BroadcastReceiver {
 		}else if (intent.getAction().equals(WeatherStringRes.BC_UPDATED_COMPLETE)){  //资料写入数据库完毕，开始更新widget
 			Intent intentUpdate = new Intent();
 			intentUpdate.setAction(WeatherStringRes.MainWidgetService_action);
+			//5.0 以后， service服务必须采用显示方式启动
+			intentUpdate.setPackage(MyApp.getContext().getPackageName());
 			intentUpdate.addCategory(WeatherStringRes.MainWidgetService_category);
 			// YaoWen(43194) modify  at 2017/8/8 21:14
 			//Todo 这个地方会报错

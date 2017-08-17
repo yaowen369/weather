@@ -15,7 +15,6 @@ public class GetWeatherPic {
 	
 	
 	public GetWeatherPic(String weather) {
-		// TODO Auto-generated constructor stub
 		weatherType = weather;
 	}
 	

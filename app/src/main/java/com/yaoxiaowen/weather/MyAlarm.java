@@ -15,7 +15,6 @@ public class MyAlarm extends Activity{
 	private static final String TAG = "MyAlarm";
 	
 	public MyAlarm() {
-		// TODO Auto-generated constructor stub
 		MyLog.v(TAG, "MyAlarm()");
 	}
 	
@@ -23,7 +22,6 @@ public class MyAlarm extends Activity{
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setLunarAlarm();
 	}

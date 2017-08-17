@@ -17,7 +17,6 @@ public class GetWeatherAsyncTask extends AsyncTask<String, Void, String> {
 	private Context context;
 	
 	public GetWeatherAsyncTask(TextView text, Context context) {
-		// TODO Auto-generated constructor stub
 		this.text = text;
 		this.context = context;
 	}
@@ -27,14 +26,12 @@ public class GetWeatherAsyncTask extends AsyncTask<String, Void, String> {
 	}
 	
 	public GetWeatherAsyncTask(Context context) {
-		// TODO Auto-generated constructor stub
 		this.context = context;
 	}
 
 	
 	@Override
 	protected void onPreExecute() {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "onPreExecute()");
 		mBaibuWeather = new BaiduWeather();
 	}
@@ -43,14 +40,12 @@ public class GetWeatherAsyncTask extends AsyncTask<String, Void, String> {
 
 	@Override
 	protected String doInBackground(String... arg0) {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "doInBackground()");
 		return mBaibuWeather.getWeather(arg0[0]);
 	}
 	
 	@Override
 	protected void onPostExecute(String result) {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "onPostExecute()");
 //		text.setText(result);
 		if (result.equals(BaiduWeather.SUCCESS)){

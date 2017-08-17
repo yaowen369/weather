@@ -11,11 +11,13 @@
         android:layout_height="wrap_content"
         android:contentDescription="test而已"
         />
-    
+
+	<!--  发现下面三个 更新时间的功能根本就没有实现 ,  所以就 隐藏吧 -->
 	<LinearLayout 
 		android:layout_width="fill_parent"
 		android:layout_height="25dp"
-		android:orientation="horizontal"    
+		android:orientation="horizontal"
+		android:visibility="gone"
 	    >
 	    
 	    <TextView

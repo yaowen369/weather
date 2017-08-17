@@ -53,7 +53,6 @@ OnSharedPreferenceChangeListener{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "onCreateView()");
 		
 //		View inputCity = inflater.inflate(R.xml.input_city, container, false);
@@ -65,7 +64,6 @@ OnSharedPreferenceChangeListener{
 
 	@Override
 	public boolean onPreferenceClick(Preference pf) {
-		// TODO Auto-generated method stub
 		MyLog.v(TAG, "onPreferenceClick()");
 //		if (pf.getKey().equals(KEY_INPUT_CITY)){
 //			String city = sp.getString(KEY_INPUT_CITY, null);
